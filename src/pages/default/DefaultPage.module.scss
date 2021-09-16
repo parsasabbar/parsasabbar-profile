@@ -1,0 +1,34 @@
+@use "../../assets/sass/Mixins";
+
+.default_page {
+  @include Mixins.flex-center;
+  height: 100vh;
+
+  .box_container {
+    display: grid;
+    width: 60vw;
+    backdrop-filter: blur(3px);
+    background: linear-gradient(
+      45deg,
+      rgba(255, 255, 255, 0.2),
+      rgba(255, 255, 255, 0.7)
+    );
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 30rem;
+    border: 2px solid red;
+    .image_container {
+      clip-path: polygon(0 0, 70% 0, 30% 100%, 0 100%);
+      width: 100%;
+      height: 100%;
+      img {
+        filter: grayscale(100%);
+        width: 70%;
+        height: 100%;
+      }
+    }
+    .content {
+      @include Mixins.flex-center;
+      flex-flow: column nowrap;
+    }
+  }
+}

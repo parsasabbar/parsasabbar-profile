@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+  font-family: IRANSansWeb;
+}
+* {
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "IRANSansWeb";
+  src: url("../fonts/A-Iranian-Sans/5c53f1a72f61b5b51e2ea79a22ebc38b.eot");
+  src: url("../fonts/A-Iranian-Sans/5c53f1a72f61b5b51e2ea79a22ebc38b.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/A-Iranian-Sans/5c53f1a72f61b5b51e2ea79a22ebc38b.woff2")
+      format("woff2"),
+    url("../fonts/A-Iranian-Sans/5c53f1a72f61b5b51e2ea79a22ebc38b.woff")
+      format("woff"),
+    url("../fonts/A-Iranian-Sans/5c53f1a72f61b5b51e2ea79a22ebc38b.ttf")
+      format("truetype"),
+    url("../fonts/A-Iranian-Sans/5c53f1a72f61b5b51e2ea79a22ebc38b.svg#IRANSansWeb(FaNum) Medium")
+      format("svg");
+}
