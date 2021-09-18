@@ -5,7 +5,7 @@ import { useSelector } from "react-redux";
 import { useHistory, useLocation } from "react-router";
 import { EasingType } from "tsparticles";
 import { IAllReducersType, PageMovingStateType } from "../../redux/AllReducers";
-import { easeCubicOut } from "d3-ease";
+import { easeCubicInOut } from "d3-ease";
 
 function EffectivePageMove(props: any) {
   //variables
@@ -44,7 +44,7 @@ function EffectivePageMove(props: any) {
       },
       config: {
         duration: duration,
-        easing: (t) => easeCubicOut(t),
+        easing: (t) => easeCubicInOut(t),
       },
     });
   }, [loc.pathname]);
@@ -62,7 +62,7 @@ function EffectivePageMove(props: any) {
         },
         config: {
           duration: duration,
-          easing: (t) => easeCubicOut(t),
+          easing: (t) => easeCubicInOut(t),
         },
       });
     }

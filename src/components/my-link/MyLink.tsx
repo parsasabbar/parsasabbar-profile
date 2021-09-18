@@ -21,7 +21,7 @@ function MyLink(props: { to: string; children: any }) {
     });
     setTimeout(() => {
       history.push(props.to);
-    }, 400);
+    }, 300);
   };
   return <div onClick={test}>{props.children}</div>;
 }
