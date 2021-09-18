@@ -17,14 +17,22 @@
     grid-template-rows: 30rem;
     border: 2px solid red;
     .image_container {
-      clip-path: polygon(0 0, 70% 0, 30% 100%, 0 100%);
+      //clip-path: polygon(0 0, 70% 0, 30% 100%, 0 100%);
+      background: linear-gradient(
+          to right,
+          transparent,
+          rgba(255, 255, 255, 0.616)
+        ),
+        url("../../assets/images/parsa-sabbar1.jpg");
+      background-size: cover cover;
       width: 100%;
       height: 100%;
-      img {
-        filter: grayscale(100%);
-        width: 70%;
-        height: 100%;
-      }
+      // img {
+      //   background: linear-gradient(left to right, red, blue);
+      //   filter: grayscale(100%);
+      //   width: 70%;
+      //   height: 100%;
+      // }
     }
     .content {
       @include Mixins.flex-center;

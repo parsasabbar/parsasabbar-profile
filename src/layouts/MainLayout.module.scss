@@ -1,29 +1,41 @@
 .main_layout {
   //background: url("../assets/images/parsa-sabbar.jpg");
 
-  &::before {
-    content: "";
-    position: absolute;
-    animation: test 1s forwards;
-    width: 30px;
-    height: 100vh;
-    background-color: red;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    @keyframes test {
-      from {
-        transform: translateX(0);
-      }
-      to {
-        transform: translateX(100vw);
-      }
-    }
-  }
+  // &::before {
+  //   content: "";
+  //   position: absolute;
+  //   animation: test 1s forwards;
+  //   width: 30px;
+  //   height: 100vh;
+  //   background-color: red;
+  //   top: 0;
+  //   left: 0;
+  //   z-index: -1;
+  //   @keyframes test {
+  //     from {
+  //       transform: translateX(0);
+  //     }
+  //     to {
+  //       transform: translateX(100vw);
+  //     }
+  //   }
+  // }
 
   .layout_content {
     //animation: show_content 0.5s forwards;
-    background: url("../assets/images/backgrounds/test.svg");
+    background: linear-gradient(
+        to right top,
+        rgba(0, 255, 200, 0.2),
+        rgba(255, 255, 255, 0.8)
+      ),
+      //url("../assets/images/backgrounds/artem-sapegin-b18TRXc8UPQ-unsplash.jpg");
+      //url("../assets/images/backgrounds/altumcode-Y2m8QfYlpPY-unsplash.jpg");
+      //url("../assets/images/backgrounds/1014.jpg");
+      url("../assets/images/backgrounds/james-harrison-vpOeXr5wmR4-unsplash.jpg");
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+
     @keyframes show_content {
       from {
         opacity: 0;
