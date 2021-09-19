@@ -1,7 +1,12 @@
 import React, { useEffect, useRef } from "react";
+import Button from "../../components/button/Button";
 import MyLink from "../../components/my-link/MyLink";
 import Percentage from "../../components/percentage/Percentage";
+import Routes from "../../models/Routes";
 import styles from "./AboutMePage.module.scss";
+import backIcon from "../../assets/images/icons/arrow.svg";
+import titleImage from "../../assets/images/backgrounds/undraw_Profile_re_4a55.svg";
+
 function AboutMePage() {
   const ref = useRef<HTMLDivElement>(null);
 
@@ -16,13 +21,14 @@ function AboutMePage() {
   return (
     <div className={styles.about_me_page}>
       <div className={styles.box_container}>
-        <div className={styles.image_container}></div>
-        <h2>about me</h2>
+        <div className={styles.image_container}>
+          <img src={titleImage} draggable={false} />
+        </div>
+        <h2>About Me</h2>
         <p>
           hello i am parsa sabbar hello i am parsa sabbar hello i am parsa
           sabbar hello i am parsa sabbar hello i am parsa sabbar
         </p>
-        <MyLink to="/">test</MyLink>
         <h2>skills</h2>
         <div className={styles.skills_container}>
           <div className={styles.skill}>
@@ -59,7 +65,9 @@ function AboutMePage() {
         <br />
         <br />
         <br />
-        <div ref={ref}>hello world</div>
+        <MyLink to={Routes.DEFAULT}>
+          <Button icon={backIcon}>back</Button>
+        </MyLink>
       </div>
     </div>
   );

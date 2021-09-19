@@ -2,10 +2,30 @@ body {
   margin: 0;
   font-family: IRANSansWeb, code, Verdana, Geneva, Tahoma, sans-serif;
 }
+::-webkit-scrollbar {
+  width: 0.5rem;
+  z-index: 1;
+}
+
+::-webkit-scrollbar-track {
+  // box-shadow: inset 0 0 5px grey;
+  //border: thin solid blue;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: lightgray;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ff3a85;
+}
 * {
   box-sizing: border-box;
   font-family: Verdana, IRANSansWeb, Geneva, Tahoma, sans-serif;
 }
+
 @font-face {
   font-family: "IRANSansWeb";
   src: url("../fonts/A-Iranian-Sans/5c53f1a72f61b5b51e2ea79a22ebc38b.eot");

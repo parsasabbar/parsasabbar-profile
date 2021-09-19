@@ -12,16 +12,7 @@ function MainLayout(props: any) {
   }, []);
   return (
     <div className={styles.main_layout}>
-      <div
-        style={{
-          position: "fixed",
-          top: 0,
-          left: 0,
-          width: "100vw",
-          height: "100vh",
-          //zIndex: -1,
-        }}
-      >
+      <div className={styles.particles_container}>
         <Particles
           id="tsparticles"
           // init={this.particlesInit}
@@ -107,7 +98,7 @@ function MainLayout(props: any) {
         />
       </div>
 
-      <div className={styles.layout_content} style={{ overflow: "auto" }}>
+      <div className={styles.layout_content}>
         <EffectivePageMove>{props.children}</EffectivePageMove>
       </div>
     </div>

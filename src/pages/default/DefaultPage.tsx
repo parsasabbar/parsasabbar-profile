@@ -4,6 +4,8 @@ import parsaSabbarImage from "../../assets/images/parsa-sabbar1.jpg";
 import { Link } from "react-router-dom";
 import EffectiveDisplay from "../../components/effective-display/EffectiveDisplay";
 import MyLink from "../../components/my-link/MyLink";
+import Routes from "../../models/Routes";
+import Button from "../../components/button/Button";
 
 function DefaultPage() {
   return (
@@ -13,20 +15,27 @@ function DefaultPage() {
           {/* <img src={parsaSabbarImage} /> */}
         </div>
         <div className={styles.content}>
-          <h1>پارسا صبار</h1>
-          <div className={styles.links}>
-            <EffectiveDisplay>
-              <Link to="">hello</Link>
+          <h1>Parsa Sabbar</h1>
+          <div>full stack developer</div>
+          <div className={styles.button_container}>
+            <EffectiveDisplay delay={300}>
+              <MyLink to={Routes.ABOUT_ME}>
+                <Button className={styles.links}>About Me</Button>
+              </MyLink>
             </EffectiveDisplay>
           </div>
-          <div className={styles.links}>
-            <EffectiveDisplay>
-              <MyLink to="/contact">contact</MyLink>
+          <div className={styles.button_container}>
+            <EffectiveDisplay delay={500}>
+              <MyLink to={Routes.WORK_EXPERIENCES}>
+                <Button className={styles.links}>Work Experiences</Button>
+              </MyLink>
             </EffectiveDisplay>
           </div>
-          <div className={styles.links}>
-            <EffectiveDisplay>
-              <MyLink to="/about-me">hello</MyLink>
+          <div className={styles.button_container}>
+            <EffectiveDisplay delay={700}>
+              <MyLink to={Routes.CONTACT}>
+                <Button className={styles.links}>Contact</Button>
+              </MyLink>
             </EffectiveDisplay>
           </div>
         </div>

@@ -8,12 +8,14 @@ import Button from "../../components/button/Button";
 import backIcon from "../../assets/images/icons/arrow.svg";
 import MyLink from "../../components/my-link/MyLink";
 import Routes from "../../models/Routes";
-
+import titleImage from "../../assets/images/backgrounds/undraw_contact_us_15o2.svg";
 function ContactPage() {
   return (
-    <div className={styles.contact}>
+    <div className={styles.contact_page}>
       <div className={styles.box_container}>
-        <div className={styles.image_container}></div>
+        <div className={styles.image_container}>
+          <img src={titleImage} draggable={false} />
+        </div>
         <h2>contact</h2>
         <div className={styles.social_container}>
           <div className={styles.social}>
@@ -22,7 +24,6 @@ function ContactPage() {
             </div>
             <div>hello world</div>
           </div>
-
           <div className={styles.social}>
             <div>
               <img src={telegramIcon} />

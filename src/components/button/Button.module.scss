@@ -2,8 +2,9 @@
 
 .button {
   @include Mixins.flex-center;
+  user-select: none;
   border: none;
-  color: rgb(211, 210, 210);
+  color: #efefef;
   box-shadow: 2px 5px 15px gray;
   padding: 0.5rem 3rem;
   border-radius: 5px;

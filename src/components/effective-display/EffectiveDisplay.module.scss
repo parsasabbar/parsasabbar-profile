@@ -9,12 +9,13 @@
     position: relative;
     @include Mixins.flex-center;
     flex-flow: row nowrap;
-    border: thin solid orange;
+    //border: thin solid orange;
     .overlay {
       @include Mixins.flex-center;
       overflow: hidden;
-      //position: absolute;
-      border: 2px solid blue;
+      //border: 2px solid blue;
+      padding: 0.5rem;
+      overflow: visible;
       width: -webkit-fill-available;
       animation: open_animation 0.5s forwards 0.3s;
       opacity: 0;
