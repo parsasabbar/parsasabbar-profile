@@ -35,7 +35,7 @@ function EffectivePageMove(props: any) {
   useEffect(() => {
     setSpringStyle.start({
       from: {
-        transform: "scale(0.5,0.5)",
+        transform: "scale(0.3,0.3)",
         opacity: 0,
       },
       to: {
@@ -43,7 +43,7 @@ function EffectivePageMove(props: any) {
         opacity: 1,
       },
       config: {
-        duration: duration,
+        duration: duration + 100,
         easing: (t) => easeCubicInOut(t),
       },
     });
@@ -70,7 +70,7 @@ function EffectivePageMove(props: any) {
   }, [pagemove]);
 
   return (
-    <div>
+    <div style={{ overflow: "hidden" }}>
       <animated.div style={springStyle}>{props.children}</animated.div>
     </div>
   );

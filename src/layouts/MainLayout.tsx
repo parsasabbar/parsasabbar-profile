@@ -19,7 +19,7 @@ function MainLayout(props: any) {
           left: 0,
           width: "100vw",
           height: "100vh",
-          zIndex: -1,
+          //zIndex: -1,
         }}
       >
         <Particles
@@ -33,35 +33,35 @@ function MainLayout(props: any) {
               },
             },
             fpsLimit: 60,
-            interactivity: {
-              detectsOn: "canvas",
-              events: {
-                onClick: {
-                  enable: true,
-                  mode: "repulse",
-                },
-                onHover: {
-                  enable: true,
-                  mode: "repulse",
-                },
-                resize: true,
-              },
-              modes: {
-                bubble: {
-                  distance: 400,
-                  duration: 2,
-                  opacity: 0.8,
-                  size: 40,
-                },
-                push: {
-                  quantity: 4,
-                },
-                repulse: {
-                  distance: 200,
-                  duration: 0.4,
-                },
-              },
-            },
+            // interactivity: {
+            //   detectsOn: "canvas",
+            //   events: {
+            //     onClick: {
+            //       enable: true,
+            //       mode: "repulse",
+            //     },
+            //     onHover: {
+            //       enable: true,
+            //       mode: "repulse",
+            //     },
+            //     resize: true,
+            //   },
+            //   modes: {
+            //     bubble: {
+            //       distance: 400,
+            //       duration: 2,
+            //       opacity: 0.8,
+            //       size: 40,
+            //     },
+            //     push: {
+            //       quantity: 4,
+            //     },
+            //     repulse: {
+            //       distance: 200,
+            //       duration: 0.4,
+            //     },
+            //   },
+            // },
             particles: {
               color: {
                 value: "#000000",
@@ -81,7 +81,7 @@ function MainLayout(props: any) {
                 enable: true,
                 outMode: "bounce",
                 random: false,
-                speed: 1,
+                speed: 1.5,
                 straight: false,
               },
               number: {
@@ -107,7 +107,7 @@ function MainLayout(props: any) {
         />
       </div>
 
-      <div className={styles.layout_content}>
+      <div className={styles.layout_content} style={{ overflow: "auto" }}>
         <EffectivePageMove>{props.children}</EffectivePageMove>
       </div>
     </div>

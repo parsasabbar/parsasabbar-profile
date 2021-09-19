@@ -1,9 +1,10 @@
 body {
   margin: 0;
-  font-family: IRANSansWeb;
+  font-family: IRANSansWeb, code, Verdana, Geneva, Tahoma, sans-serif;
 }
 * {
   box-sizing: border-box;
+  font-family: Verdana, IRANSansWeb, Geneva, Tahoma, sans-serif;
 }
 @font-face {
   font-family: "IRANSansWeb";

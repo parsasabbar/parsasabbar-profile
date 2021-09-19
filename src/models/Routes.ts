@@ -1,7 +1,7 @@
 enum Routes {
   ABOUT_ME = "/about-me",
-  SKILLS = "/skills",
-  WORK_SAMPLES = "/work-samples",
+  CONTACT = "/skills",
+  WORK_EXPERIENCES = "/work-experiences",
 }
 
 export default Routes;

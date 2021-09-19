@@ -3,7 +3,9 @@ import { Route, Switch } from "react-router-dom";
 import MainLayout from "../../layouts/MainLayout";
 import Routes from "../../models/Routes";
 import AboutMePage from "../../pages/about-me/AboutMePage";
+import ContactPage from "../../pages/contact/ContactPage";
 import DefaultPage from "../../pages/default/DefaultPage";
+import ExperiencesPage from "../../pages/experiences/ExperiencesPage";
 import TestPage from "../../pages/test/TestPage";
 import AppRoute from "./AppRoute";
 
@@ -16,6 +18,18 @@ function RouteManager() {
         page={AboutMePage}
         layout={MainLayout}
         path={Routes.ABOUT_ME}
+        exact
+      />
+      <AppRoute
+        page={ExperiencesPage}
+        layout={MainLayout}
+        path={Routes.WORK_EXPERIENCES}
+        exact
+      />
+      <AppRoute
+        page={ContactPage}
+        layout={MainLayout}
+        path={Routes.CONTACT}
         exact
       />
     </Switch>
