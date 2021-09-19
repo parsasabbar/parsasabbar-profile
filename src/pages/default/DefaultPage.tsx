@@ -21,7 +21,7 @@ function DefaultPage() {
           </div>
           <div className={styles.links}>
             <EffectiveDisplay>
-              <Link to="">hello</Link>
+              <MyLink to="/contact">contact</MyLink>
             </EffectiveDisplay>
           </div>
           <div className={styles.links}>

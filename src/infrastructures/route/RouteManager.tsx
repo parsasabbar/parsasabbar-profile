@@ -14,24 +14,13 @@ function RouteManager() {
     <Switch>
       <AppRoute page={TestPage} path="/test" />
       <AppRoute page={DefaultPage} layout={MainLayout} path="/" exact />
-      <AppRoute
-        page={AboutMePage}
-        layout={MainLayout}
-        path={Routes.ABOUT_ME}
-        exact
-      />
+      <AppRoute page={AboutMePage} layout={MainLayout} path={Routes.ABOUT_ME} />
       <AppRoute
         page={ExperiencesPage}
         layout={MainLayout}
         path={Routes.WORK_EXPERIENCES}
-        exact
       />
-      <AppRoute
-        page={ContactPage}
-        layout={MainLayout}
-        path={Routes.CONTACT}
-        exact
-      />
+      <AppRoute page={ContactPage} layout={MainLayout} path={Routes.CONTACT} />
     </Switch>
   );
 }

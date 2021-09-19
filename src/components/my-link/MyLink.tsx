@@ -8,7 +8,7 @@ import {
   PageMovingStateType,
 } from "../../redux/AllReducers";
 
-function MyLink(props: { to: string; children: any }) {
+function MyLink(props: { to: string; children?: any }) {
   let history = useHistory();
   const dispatch = useDispatch();
   const pagemove = useSelector<IAllReducersType, PageMovingStateType>(
@@ -23,7 +23,7 @@ function MyLink(props: { to: string; children: any }) {
       history.push(props.to);
     }, 300);
   };
-  return <div onClick={test}>{props.children}</div>;
+  return <span onClick={test}>{props.children}</span>;
 }
 
 export default MyLink;

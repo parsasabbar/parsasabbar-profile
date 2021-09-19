@@ -17,7 +17,6 @@ function AboutMePage() {
     <div className={styles.about_me_page}>
       <div className={styles.box_container}>
         <div className={styles.image_container}></div>
-        {/* #00BFA6 */}
         <h2>about me</h2>
         <p>
           hello i am parsa sabbar hello i am parsa sabbar hello i am parsa

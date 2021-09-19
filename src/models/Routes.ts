@@ -1,6 +1,7 @@
 enum Routes {
+  DEFAULT = "/",
   ABOUT_ME = "/about-me",
-  CONTACT = "/skills",
+  CONTACT = "/contact",
   WORK_EXPERIENCES = "/work-experiences",
 }
 

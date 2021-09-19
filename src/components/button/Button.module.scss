@@ -1,0 +1,16 @@
+@use "../../assets/sass/Mixins";
+
+.button {
+  @include Mixins.flex-center;
+  border: none;
+  color: rgb(211, 210, 210);
+  box-shadow: 2px 5px 15px gray;
+  padding: 0.5rem 3rem;
+  border-radius: 5px;
+  cursor: pointer;
+  background: linear-gradient(to right, #00bfa6, #ff3a85);
+  img {
+    margin-right: 0.5rem;
+    width: 1rem;
+  }
+}
