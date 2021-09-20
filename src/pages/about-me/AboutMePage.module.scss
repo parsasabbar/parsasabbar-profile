@@ -42,6 +42,7 @@
 @media screen and (max-width: Variables.$mobile-limit-size) {
   .about_me_page {
     .box_container {
+      backdrop-filter: none;
       width: 90vw;
       padding: 2rem;
       margin: 1rem;

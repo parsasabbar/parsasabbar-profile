@@ -10,7 +10,9 @@
       rgba(255, 255, 255, 0.3),
       rgba(255, 255, 255, 0.8)
     );
+
     border-radius: 10px;
+    z-index: 1;
     @include Mixins.flex-center;
     flex-flow: column nowrap;
     padding: 5rem;
@@ -56,6 +58,7 @@
 @media screen and (max-width: Variables.$mobile-limit-size) {
   .experiences_page {
     .box_container {
+      backdrop-filter: none;
       width: 90vw;
       padding: 2rem;
       margin: 1rem;

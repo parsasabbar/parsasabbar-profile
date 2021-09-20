@@ -1,8 +1,8 @@
 export default interface IAppRouteModel {
   roles?: string[];
   path: string;
-  layout?: (props: ILayoutModel) => JSX.Element;
-  page: (props: any) => JSX.Element;
+  layout?: (props: ILayoutModel) => any;
+  page: (props: any) => any;
   [rest: string]: any;
 }
 

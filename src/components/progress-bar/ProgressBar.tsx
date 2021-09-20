@@ -22,7 +22,7 @@ function ProgressBar(props: { percentage: number }) {
   useEffect(() => {
     setTimeout(() => {
       updateProgressWidth();
-    }, 300);
+    }, 500);
 
     window.addEventListener("resize", updateProgressWidth);
     return () => {

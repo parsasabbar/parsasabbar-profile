@@ -16,20 +16,7 @@ function EffectivePageMove(props: any) {
   const duration = 200;
   let loc = useLocation();
 
-  const [springStyle, setSpringStyle] = useSpring(() => ({
-    // from: {
-    //   transform: "scale(0.5,0.5)",
-    //   opacity: 0,
-    // },
-    // to: {
-    //   transform: "scale(1,1)",
-    //   opacity: 1,
-    // },
-    // config: {
-    //   // duration: duration,
-    //   easing: (t) => t + 1,
-    // },
-  }));
+  const [springStyle, setSpringStyle] = useSpring(() => ({}));
 
   //useEffects
   useEffect(() => {
