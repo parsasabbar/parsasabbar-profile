@@ -1,5 +1,5 @@
 @use "../../assets/sass/Mixins";
-
+@use "../../assets/sass/Variables";
 .experiences_page {
   @include Mixins.flex-center;
   .box_container {
@@ -26,7 +26,44 @@
       // height: 500px;
     }
     .details_container {
+      @include Mixins.flex-center;
+      flex-flow: column;
       margin: 5rem 0;
+      width: 100%;
+      h3 {
+        text-align: center;
+      }
+      h5 {
+        font-size: 1rem;
+        margin: 0;
+      }
+      .demos_container {
+        width: 100%;
+        > li {
+          margin: 3rem 0;
+          a {
+            text-decoration: none;
+            color: #ff3a85;
+            &:visited {
+              color: #ff3a85;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: Variables.$mobile-limit-size) {
+  .experiences_page {
+    .box_container {
+      width: 90vw;
+      padding: 2rem;
+      margin: 1rem;
+      .skills_container {
+        .skill {
+          margin: 3rem 0;
+        }
+      }
     }
   }
 }

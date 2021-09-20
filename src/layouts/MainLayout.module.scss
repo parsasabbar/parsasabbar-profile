@@ -1,25 +1,6 @@
-.main_layout {
-  //background: url("../assets/images/parsa-sabbar.jpg");
+@use "../assets/sass/Variables";
 
-  // &::before {
-  //   content: "";
-  //   position: absolute;
-  //   animation: test 1s forwards;
-  //   width: 30px;
-  //   height: 100vh;
-  //   background-color: red;
-  //   top: 0;
-  //   left: 0;
-  //   z-index: -1;
-  //   @keyframes test {
-  //     from {
-  //       transform: translateX(0);
-  //     }
-  //     to {
-  //       transform: translateX(100vw);
-  //     }
-  //   }
-  // }
+.main_layout {
   .particles_container {
     position: fixed;
     top: 0;
@@ -38,23 +19,16 @@
     background-size: cover;
     width: 100vw;
     height: 100vh;
-    //overflow: auto;
   }
   .layout_content {
     h2 {
       text-align: center;
     }
-    @keyframes show_content {
-      from {
-        opacity: 0;
-        visibility: hidden;
-        transform: scale(0.6, 0.6);
-      }
-      to {
-        opacity: 1;
-        visibility: visible;
-        transform: scale(1, 1);
-      }
+  }
+}
+@media screen and (max-width: Variables.$mobile-limit-size) {
+  .main_layout {
+    .particles_container {
     }
   }
 }

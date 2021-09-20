@@ -1,4 +1,5 @@
 @use "../../assets/sass/Mixins";
+@use "../../assets/sass/Variables";
 
 .default_page {
   @include Mixins.flex-center;
@@ -47,9 +48,15 @@
     .content {
       @include Mixins.flex-center;
       flex-flow: column nowrap;
+      .main_info_container {
+        margin-bottom: 4rem;
+        h1 {
+          margin: 0;
+          font-size: 2.5rem;
+        }
+      }
       .button_container {
-        min-height: 3rem;
-
+        min-height: 4rem;
         .links {
           width: 14rem;
         }

@@ -15,8 +15,10 @@ function DefaultPage() {
           {/* <img src={parsaSabbarImage} /> */}
         </div>
         <div className={styles.content}>
-          <h1>Parsa Sabbar</h1>
-          <div>full stack developer</div>
+          <div className={styles.main_info_container}>
+            <h1>Parsa Sabbar</h1>
+            <div>Full Stack Developer</div>
+          </div>
           <div className={styles.button_container}>
             <EffectiveDisplay delay={300}>
               <MyLink to={Routes.ABOUT_ME}>

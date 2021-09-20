@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import Button from "../../components/button/Button";
 import MyLink from "../../components/my-link/MyLink";
-import Percentage from "../../components/percentage/Percentage";
+import Percentage from "../../components/progress-bar/ProgressBar";
 import Routes from "../../models/Routes";
 import styles from "./AboutMePage.module.scss";
 import backIcon from "../../assets/images/icons/arrow.svg";
@@ -11,9 +11,9 @@ function AboutMePage() {
   const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    window.addEventListener("scroll", () => {
-      console.log("hi");
-    });
+    // window.addEventListener("scroll", () => {
+    //   console.log("hi");
+    // });
     // setInterval(() => {
     //   console.log(ref.current?.getBoundingClientRect());
     // }, 1000);
@@ -33,38 +33,18 @@ function AboutMePage() {
         <div className={styles.skills_container}>
           <div className={styles.skill}>
             <span>test</span>
-            <Percentage />
+            <Percentage percentage={0.5} />
           </div>
           <div className={styles.skill}>
             <span>test</span>
-            <Percentage />
+            <Percentage percentage={1} />
           </div>
           <div className={styles.skill}>
             <span>test</span>
-            <Percentage />
+            <Percentage percentage={0.5} />
           </div>
         </div>
 
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
         <MyLink to={Routes.DEFAULT}>
           <Button icon={backIcon}>back</Button>
         </MyLink>

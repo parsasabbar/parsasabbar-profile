@@ -1,23 +1,48 @@
 import styles from "./Stepper.module.scss";
-import sajImg from "../../assets/images/icons/experiences/Saj.png";
-import matnaImg from "../../assets/images/icons/experiences/matna.jpeg";
-function Stepper() {
+
+function Stepper(props: { items?: { image: string; explain: string }[] }) {
   return (
     <div className={styles.stepper}>
-      <div className={styles.dot}>
-        <div className={styles.explain_right}>
-          <img src={sajImg} />
-          <p>hello world hello world hello world</p>
-        </div>
-      </div>
-      <div className={styles.vertical_line}></div>
-      <div className={styles.dot}>
-        <div className={styles.explain_left}>
-          {" "}
-          <img src={matnaImg} />
-          <p>hello world</p>
-        </div>
-      </div>
+      {props.items &&
+        props.items.map((item, index) =>
+          index % 2 === 0 ? (
+            props.items!.length - 1 === index ? (
+              <div className={styles.dot} data-aos="fade-right">
+                <div className={styles.explain_right}>
+                  <img src={item.image} />
+                  <p>hello world hello world hello world</p>
+                </div>
+              </div>
+            ) : (
+              <>
+                <div className={styles.dot} data-aos="fade-right">
+                  <div className={styles.explain_right}>
+                    <img src={item.image} />
+                    <p>hello world hello world hello world</p>
+                  </div>
+                </div>
+                <div className={styles.vertical_line}></div>
+              </>
+            )
+          ) : props.items!.length - 1 === index ? (
+            <div className={styles.dot} data-aos="fade-left">
+              <div className={styles.explain_left}>
+                <img src={item.image} />
+                <p>hello world</p>
+              </div>
+            </div>
+          ) : (
+            <>
+              <div className={styles.dot} data-aos="fade-left">
+                <div className={styles.explain_left}>
+                  <img src={item.image} />
+                  <p>hello world</p>
+                </div>
+              </div>
+              <div className={styles.vertical_line}></div>
+            </>
+          )
+        )}
     </div>
   );
 }

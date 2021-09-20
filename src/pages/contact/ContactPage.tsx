@@ -9,6 +9,7 @@ import backIcon from "../../assets/images/icons/arrow.svg";
 import MyLink from "../../components/my-link/MyLink";
 import Routes from "../../models/Routes";
 import titleImage from "../../assets/images/backgrounds/undraw_contact_us_15o2.svg";
+import { useEffect, useRef } from "react";
 function ContactPage() {
   return (
     <div className={styles.contact_page}>
@@ -18,23 +19,37 @@ function ContactPage() {
         </div>
         <h2>contact</h2>
         <div className={styles.social_container}>
-          <div className={styles.social}>
+          <div className={styles.social} data-aos="zoom-out">
             <div>
               <img src={callIcon} />
             </div>
-            <div>hello world</div>
+            <div className={styles.info}>hello world</div>
           </div>
-          <div className={styles.social}>
-            <div>
-              <img src={telegramIcon} />
-            </div>
-            <div>hello world</div>
+          <div className={styles.social} data-aos="zoom-out">
+            <a href="">
+              <div>
+                <img src={linkedinIcon} />
+              </div>
+              <div className={styles.info}>hello world</div>
+            </a>
           </div>
-          <div className={styles.social}>
+          <div className={styles.social} data-aos="zoom-out">
             <div>
               <img src={gmailIcon} />
             </div>
-            <div>hello world</div>
+            <div className={styles.info}>hello world</div>
+          </div>
+          <div className={styles.social} data-aos="zoom-out">
+            <div>
+              <img src={telegramIcon} />
+            </div>
+            <div className={styles.info}>hello world</div>
+          </div>
+          <div className={styles.social} data-aos="zoom-out">
+            <div>
+              <img src={instagramIcon} />
+            </div>
+            <div className={styles.info}>hello world</div>
           </div>
         </div>
         <MyLink to={Routes.DEFAULT}>

@@ -1,3 +1,4 @@
+@use "../../assets/sass/Variables";
 @use "../../assets/sass/Mixins";
 
 .contact_page {
@@ -26,9 +27,34 @@
       // height: 500px;
     }
     .social_container {
+      margin: 3rem;
       .social {
         @include Mixins.flex-center;
         flex-flow: row;
+        margin: 1rem;
+        a {
+          @include Mixins.flex-center;
+          flex-flow: row;
+          text-decoration: none;
+          &:visited {
+            color: black;
+          }
+        }
+        .info {
+          margin: 1rem;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: Variables.$mobile-limit-size) {
+  .contact_page {
+    .box_container {
+      width: 90vw;
+      padding: 2rem;
+      margin: 1rem;
+      .social_container {
+        margin: 3rem 0;
       }
     }
   }

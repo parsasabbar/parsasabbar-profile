@@ -1,0 +1,26 @@
+@use "../../assets/sass/Mixins";
+@use "../../assets/sass/Variables";
+
+.progress_bar {
+  width: 100%;
+  @include Mixins.flex-center;
+  .bar {
+    width: 80%;
+    height: 1rem;
+    background-color: white;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    > div {
+      border-radius: 0.5rem;
+      height: 100%;
+      background: linear-gradient(to right, #00bfa6, #ff3a85);
+    }
+  }
+}
+@media screen and (max-width: Variables.$mobile-limit-size) {
+  .progress_bar {
+    .bar {
+      width: 100%;
+    }
+  }
+}

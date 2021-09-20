@@ -5,6 +5,8 @@ import backIcon from "../../assets/images/icons/arrow.svg";
 import MyLink from "../../components/my-link/MyLink";
 import Routes from "../../models/Routes";
 import Stepper from "../../components/stepper/Stepper";
+import sajImg from "../../assets/images/icons/experiences/Saj.png";
+import matnaImg from "../../assets/images/icons/experiences/matna.jpeg";
 
 function ExperiencesPage() {
   return (
@@ -16,15 +18,27 @@ function ExperiencesPage() {
         <h2>Work Experiences</h2>
         <div className={styles.details_container}>
           <h3>Companies</h3>
-          <Stepper />
+          <Stepper
+            items={[
+              { image: sajImg, explain: "test" },
+              { image: matnaImg, explain: "test" },
+            ]}
+          />
           <h3>Demos</h3>
-          <ul>
-            <li>
+          <ul className={styles.demos_container}>
+            <li data-aos="zoom-out">
               <h5>Pars Boksel</h5>
               <a href="https://google.com">google.com</a>
-              <p>as a freelancer project</p>
+              <p>
+                as a freelancer project as a freelancer project as a freelancer
+                project
+                <ul>
+                  <li>best</li>
+                  <li>test</li>
+                </ul>
+              </p>
             </li>
-            <li>
+            <li data-aos="zoom-out">
               <h5>Pars Boksel</h5>
               <a href="https://google.com">google.com</a>
               <p>as a freelancer project</p>
