@@ -56,6 +56,10 @@ function AboutMePage() {
             <Percentage percentage={0.95} />
           </div>
           <div className={styles.skill}>
+            <span>TypeScript</span>
+            <Percentage percentage={0.95} />
+          </div>
+          <div className={styles.skill}>
             <span>Express</span>
             <Percentage percentage={0.85} />
           </div>
@@ -69,7 +73,7 @@ function AboutMePage() {
           </div>
           <div className={styles.skill}>
             <span>SQL</span>
-            <Percentage percentage={0.6} />
+            <Percentage percentage={0.5} />
           </div>
           <div className={styles.skill}>
             <span>Redis</span>
@@ -85,7 +89,7 @@ function AboutMePage() {
           </div>
           <div className={styles.skill}>
             <span>Sass</span>
-            <Percentage percentage={0.9} />
+            <Percentage percentage={0.95} />
           </div>
           <div className={styles.skill}>
             <span>Docker</span>

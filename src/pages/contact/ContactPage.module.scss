@@ -33,15 +33,24 @@
         flex-flow: row;
         margin: 1rem;
         a {
-          @include Mixins.flex-center;
+          display: grid;
+          width: 100%;
+
+          grid-template-columns: 4rem min-content auto;
+          white-space: nowrap;
           flex-flow: row;
           text-decoration: none;
+          color: black;
           &:visited {
             color: black;
           }
         }
         .info {
           margin: 1rem;
+        }
+        .linkIcon {
+          @include Mixins.flex-center;
+          width: 1rem;
         }
       }
     }

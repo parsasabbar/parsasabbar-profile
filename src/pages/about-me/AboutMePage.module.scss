@@ -52,6 +52,7 @@
       margin: 1rem;
       .skills_container {
         .skill {
+          grid-template-columns: 35% 65%;
           margin: 3rem 0;
         }
       }
