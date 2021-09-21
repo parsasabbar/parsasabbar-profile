@@ -32,15 +32,75 @@ function AboutMePage() {
         <h2>skills</h2>
         <div className={styles.skills_container}>
           <div className={styles.skill}>
-            <span>test</span>
+            <span>C#</span>
+            <Percentage percentage={0.8} />
+          </div>
+          <div className={styles.skill}>
+            <span>Asp.net core</span>
+            <Percentage percentage={0.7} />
+          </div>
+          <div className={styles.skill}>
+            <span>Razor Pages</span>
             <Percentage percentage={0.5} />
           </div>
           <div className={styles.skill}>
-            <span>test</span>
-            <Percentage percentage={1} />
+            <span>Hangfire</span>
+            <Percentage percentage={0.6} />
           </div>
           <div className={styles.skill}>
-            <span>test</span>
+            <span>SignalR</span>
+            <Percentage percentage={0.6} />
+          </div>
+          <div className={styles.skill}>
+            <span>JavaScript</span>
+            <Percentage percentage={0.95} />
+          </div>
+          <div className={styles.skill}>
+            <span>Express</span>
+            <Percentage percentage={0.85} />
+          </div>
+          <div className={styles.skill}>
+            <span>Socket.IO</span>
+            <Percentage percentage={0.85} />
+          </div>
+          <div className={styles.skill}>
+            <span>MongoDB</span>
+            <Percentage percentage={0.9} />
+          </div>
+          <div className={styles.skill}>
+            <span>SQL</span>
+            <Percentage percentage={0.6} />
+          </div>
+          <div className={styles.skill}>
+            <span>Redis</span>
+            <Percentage percentage={0.6} />
+          </div>
+          <div className={styles.skill}>
+            <span>React</span>
+            <Percentage percentage={0.95} />
+          </div>
+          <div className={styles.skill}>
+            <span>Redux</span>
+            <Percentage percentage={0.8} />
+          </div>
+          <div className={styles.skill}>
+            <span>Sass</span>
+            <Percentage percentage={0.9} />
+          </div>
+          <div className={styles.skill}>
+            <span>Docker</span>
+            <Percentage percentage={0.85} />
+          </div>
+          <div className={styles.skill}>
+            <span>Linux</span>
+            <Percentage percentage={0.7} />
+          </div>
+          <div className={styles.skill}>
+            <span>CI/CD</span>
+            <Percentage percentage={0.7} />
+          </div>
+          <div className={styles.skill}>
+            <span>Unit Test</span>
             <Percentage percentage={0.5} />
           </div>
         </div>

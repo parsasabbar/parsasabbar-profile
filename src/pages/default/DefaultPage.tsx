@@ -17,7 +17,7 @@ function DefaultPage() {
         <div className={styles.content}>
           <div className={styles.main_info_container}>
             <h1>Parsa Sabbar</h1>
-            <div>Full Stack Developer</div>
+            <h5>Full Stack Developer</h5>
           </div>
           <div className={styles.button_container}>
             <EffectiveDisplay delay={300}>
