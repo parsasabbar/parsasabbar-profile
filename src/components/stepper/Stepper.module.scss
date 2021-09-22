@@ -1,4 +1,5 @@
 @use "../../assets/sass/Mixins";
+@use "../../assets/sass/Variables";
 
 .stepper {
   margin: 7rem;
@@ -20,6 +21,9 @@
       border-radius: 5px;
       min-width: 12rem;
       padding: 1rem;
+      h5 {
+        text-align: center;
+      }
       img {
         background-color: white;
         width: 5rem;
@@ -58,5 +62,20 @@
     width: 0.5rem;
     background-color: #ff3a85;
     border-radius: 0.25rem;
+  }
+}
+@media screen and (max-width: Variables.$mobile-limit-size) {
+  .stepper {
+    .dot {
+      .explain {
+        min-width: 9rem;
+        &_right {
+          transform: translateX(6rem);
+        }
+        &_left {
+          transform: translateX(-6rem);
+        }
+      }
+    }
   }
 }

@@ -20,34 +20,78 @@ function ExperiencesPage() {
           <h3>Companies</h3>
           <Stepper
             items={[
-              { image: sajImg, explain: "test" },
-              { image: matnaImg, explain: "test" },
+              {
+                image: sajImg,
+                title: "Sepand Asa Jonob",
+                explain: "Sepand Asa Jonob",
+              },
+              {
+                image: matnaImg,
+                title: "Pars System Energy",
+                explain: "Pars System Energy",
+              },
             ]}
           />
           <h3>Demos</h3>
           <ul className={styles.demos_container}>
             <li data-aos="zoom-out">
               <h5>Pars Boksel</h5>
-              <a href="http://parsboksel.ir">parsboksel.ir</a>
+              <a href="http://parsboksel.ir" target="_blank">
+                parsboksel.ir
+              </a>
               <p>
                 this is my first website project created using asp.net webforms
               </p>
             </li>
             <li data-aos="zoom-out">
               <h5>Perspolis Pitch</h5>
-              <a href="http://perspolispitch.com">perspolispitch.com</a>
+              <a href="http://perspolispitch.com" target="_blank">
+                perspolispitch.com
+              </a>
               <p>this project is created using asp.net webform too</p>
             </li>
             <li data-aos="zoom-out">
               <h5>Samo Persian</h5>
-              <a href="http://www.hozoorchain-iranchain.com/">
+              <a href="http://www.hozoorchain-iranchain.com/" target="_blank">
                 hozorchain-iranchain.com
               </a>
               <p>this project is created using asp.net core and rezor pages</p>
             </li>
             <li data-aos="zoom-out">
               <h5>Folad Press</h5>
-              <a href="http://perspolispitch.com">perspolispitch.com</a>
+              <a href="http://foladpress.ir" target="_blank">
+                foladpress.ir
+              </a>
+              <p>
+                for backed, I used asp.net core Rest Api and for frontend i used
+                html and vanilla js
+              </p>
+            </li>
+            <li data-aos="zoom-out">
+              <h5>TDMS</h5>
+              <a href="http://saj-tdms.ir" target="_blank">
+                saj-tdms.ir (private)
+              </a>
+              <p>
+                for backed, I used asp.net core Rest Api and for frontend i used
+                html and vanilla js
+              </p>
+            </li>
+            <li data-aos="zoom-out">
+              <h5>Pnete</h5>
+              <a href="https://matna.pnete.com" target="_blank">
+                matna.pnete.com
+              </a>
+              <p>
+                for backed, I used asp.net core Rest Api and for frontend i used
+                html and vanilla js
+              </p>
+            </li>
+            <li data-aos="zoom-out">
+              <h5>Setare Yab</h5>
+              <a href="https://setareyab.ir" target="_blank">
+                setareyab.ir
+              </a>
               <p>
                 for backed, I used asp.net core Rest Api and for frontend i used
                 html and vanilla js

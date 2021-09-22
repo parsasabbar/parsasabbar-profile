@@ -12,7 +12,7 @@ const RouteManager = lazy(() => import("./infrastructures/route/RouteManager"));
 
 function App() {
   AOS.init({
-    delay: 400,
+    delay: 350,
     offset: 150,
   });
 

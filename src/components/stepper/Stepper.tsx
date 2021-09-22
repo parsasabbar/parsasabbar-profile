@@ -1,6 +1,8 @@
 import styles from "./Stepper.module.scss";
 
-function Stepper(props: { items?: { image: string; explain: string }[] }) {
+function Stepper(props: {
+  items?: { image: string; title: string; explain: string }[];
+}) {
   return (
     <div className={styles.stepper}>
       {props.items &&
@@ -10,7 +12,8 @@ function Stepper(props: { items?: { image: string; explain: string }[] }) {
               <div className={styles.dot} data-aos="fade-right">
                 <div className={styles.explain_right}>
                   <img src={item.image} />
-                  <p>hello world hello world hello world</p>
+                  <h5>{item.title}</h5>
+                  <p></p>
                 </div>
               </div>
             ) : (
@@ -18,6 +21,7 @@ function Stepper(props: { items?: { image: string; explain: string }[] }) {
                 <div className={styles.dot} data-aos="fade-right">
                   <div className={styles.explain_right}>
                     <img src={item.image} />
+                    <h5>{item.title}</h5>
                     <p>hello world hello world hello world</p>
                   </div>
                 </div>
@@ -28,6 +32,7 @@ function Stepper(props: { items?: { image: string; explain: string }[] }) {
             <div className={styles.dot} data-aos="fade-left">
               <div className={styles.explain_left}>
                 <img src={item.image} />
+                <h5>{item.title}</h5>
                 <p>hello world</p>
               </div>
             </div>
@@ -36,6 +41,7 @@ function Stepper(props: { items?: { image: string; explain: string }[] }) {
               <div className={styles.dot} data-aos="fade-left">
                 <div className={styles.explain_left}>
                   <img src={item.image} />
+                  <h5>{item.title}</h5>
                   <p>hello world</p>
                 </div>
               </div>
