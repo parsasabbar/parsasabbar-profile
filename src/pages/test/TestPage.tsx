@@ -1,12 +1,11 @@
 import React from "react";
 import EffectiveDisplay from "../../components/effective-display/EffectiveDisplay";
+import TwoCircleLoading from "../../components/loading/two-circle-loading/TwoCircleLoading";
 
 function TestPage() {
   return (
     <div>
-      <EffectiveDisplay>hello world</EffectiveDisplay>
-      <EffectiveDisplay delay={170}>hello world</EffectiveDisplay>
-      <EffectiveDisplay delay={340}>hello world</EffectiveDisplay>
+      <TwoCircleLoading />
     </div>
   );
 }

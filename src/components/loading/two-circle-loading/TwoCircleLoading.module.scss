@@ -1,0 +1,63 @@
+@import "../../../assets/sass/Mixins";
+
+.two_circle_loading {
+  @include flex-center;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  .cotainer {
+    @include flex-center;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    animation: rotation_animation 0.65s linear infinite;
+    .loading_circle1 {
+      position: absolute;
+
+      transform-origin: 50% 50%;
+      g {
+        path {
+          transition: all 1s;
+          stroke-opacity: 0.5;
+          stroke-width: 3px;
+          stroke: #ff3a85;
+          animation: path_animation 1s linear infinite alternate;
+          stroke-dasharray: calc(2 * 3.14 * 100%);
+        }
+      }
+    }
+    .loading_circle2 {
+      position: absolute;
+      transform-origin: 50% 50%;
+      transform: rotateZ(180deg);
+      g {
+        path {
+          transition: all 1s;
+          stroke-opacity: 0.5;
+          stroke: #00bfa6;
+          stroke-width: 3px;
+          animation: path_animation 1s linear infinite alternate;
+          stroke-dasharray: calc(2 * 3.14 * 100%);
+        }
+      }
+    }
+  }
+  @keyframes rotation_animation {
+    from {
+      transform: rotateZ(0);
+      //stroke-dashoffset: 130%;
+    }
+    to {
+      transform: rotateZ(360deg);
+      //stroke-dashoffset: 50%;
+    }
+  }
+  @keyframes path_animation {
+    from {
+      stroke-dashoffset: 0;
+    }
+    to {
+      stroke-dashoffset: calc(2 * 3.14 * 100%);
+    }
+  }
+}

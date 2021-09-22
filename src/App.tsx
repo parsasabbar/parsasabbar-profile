@@ -6,7 +6,7 @@ import "aos/dist/aos.css";
 import { resolve } from "path";
 import test from "./assets/images/backgrounds/undraw_contact_us_15o2.svg";
 import PreloadImages from "./components/loading/preload-images/PreloadImages";
-import PageLoading from "./components/loading/page-loading/PageLoading";
+import TwoCircleLoading from "./components/loading/two-circle-loading/TwoCircleLoading";
 
 const RouteManager = lazy(() => import("./infrastructures/route/RouteManager"));
 
@@ -26,7 +26,7 @@ function App() {
   // };
 
   return (
-    <Suspense fallback={<PageLoading />}>
+    <Suspense fallback={<TwoCircleLoading />}>
       <PreloadImages>
         <RouteManager />
       </PreloadImages>
