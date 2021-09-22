@@ -5,7 +5,8 @@ import aboutMePageTitleImage from "../../../assets/images/backgrounds/undraw_Pro
 import workExperiencesPageTitleImage from "../../../assets/images/backgrounds/undraw_Project_completed_re_pqqq.svg";
 import parsaImage from "../../../assets/images/parsa-sabbar.png";
 import defaultBackgroundImage from "../../../assets/images/backgrounds/james-harrison-vpOeXr5wmR4-unsplash.jpg";
-
+import sajImg from "../../../assets/images/icons/experiences/Saj.png";
+import matnaImg from "../../../assets/images/icons/experiences/matna.png";
 function PreloadImages(props: { children: any }) {
   let Preload = require("react-preload").Preload;
 
@@ -14,6 +15,8 @@ function PreloadImages(props: { children: any }) {
     <Preload
       // loadingIndicator={loadingIndicator}
       images={[
+        sajImg,
+        matnaImg,
         parsaImage,
         defaultBackgroundImage,
         contactPageTitleImage,

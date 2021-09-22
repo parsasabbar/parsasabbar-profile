@@ -6,7 +6,7 @@ import MyLink from "../../components/my-link/MyLink";
 import Routes from "../../models/Routes";
 import Stepper from "../../components/stepper/Stepper";
 import sajImg from "../../assets/images/icons/experiences/Saj.png";
-import matnaImg from "../../assets/images/icons/experiences/matna.jpeg";
+import matnaImg from "../../assets/images/icons/experiences/matna.png";
 
 function ExperiencesPage() {
   return (
