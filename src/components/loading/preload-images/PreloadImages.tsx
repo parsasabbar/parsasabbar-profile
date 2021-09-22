@@ -3,6 +3,8 @@ import PageLoading from "../page-loading/PageLoading";
 import contactPageTitleImage from "../../../assets/images/backgrounds/undraw_contact_us_15o2.svg";
 import aboutMePageTitleImage from "../../../assets/images/backgrounds/undraw_Profile_re_4a55.svg";
 import workExperiencesPageTitleImage from "../../../assets/images/backgrounds/undraw_Project_completed_re_pqqq.svg";
+import parsaImage from "../../../assets/images/parsa-sabbar.png";
+import defaultBackgroundImage from "../../../assets/images/backgrounds/james-harrison-vpOeXr5wmR4-unsplash.jpg";
 
 function PreloadImages(props: { children: any }) {
   let Preload = require("react-preload").Preload;
@@ -12,6 +14,8 @@ function PreloadImages(props: { children: any }) {
     <Preload
       // loadingIndicator={loadingIndicator}
       images={[
+        parsaImage,
+        defaultBackgroundImage,
         contactPageTitleImage,
         aboutMePageTitleImage,
         workExperiencesPageTitleImage,

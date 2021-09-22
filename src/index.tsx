@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import { BrowserRouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 import { createStore } from "redux";
 import AllReducers from "./redux/AllReducers";
 import { Provider } from "react-redux";
@@ -16,9 +16,9 @@ const store = createStore(
 ReactDOM.render(
   <Provider store={store}>
     <React.StrictMode>
-      <BrowserRouter>
+      <HashRouter>
         <App />
-      </BrowserRouter>
+      </HashRouter>
     </React.StrictMode>
   </Provider>,
   document.getElementById("root")

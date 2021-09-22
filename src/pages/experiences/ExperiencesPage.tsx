@@ -28,20 +28,30 @@ function ExperiencesPage() {
           <ul className={styles.demos_container}>
             <li data-aos="zoom-out">
               <h5>Pars Boksel</h5>
-              <a href="https://google.com">google.com</a>
+              <a href="http://parsboksel.ir">parsboksel.ir</a>
               <p>
-                as a freelancer project as a freelancer project as a freelancer
-                project
-                <ul>
-                  <li>best</li>
-                  <li>test</li>
-                </ul>
+                this is my first website project created using asp.net webforms
               </p>
             </li>
             <li data-aos="zoom-out">
-              <h5>Pars Boksel</h5>
-              <a href="https://google.com">google.com</a>
-              <p>as a freelancer project</p>
+              <h5>Perspolis Pitch</h5>
+              <a href="http://perspolispitch.com">perspolispitch.com</a>
+              <p>this project is created using asp.net webform too</p>
+            </li>
+            <li data-aos="zoom-out">
+              <h5>Samo Persian</h5>
+              <a href="http://www.hozoorchain-iranchain.com/">
+                hozorchain-iranchain.com
+              </a>
+              <p>this project is created using asp.net core and rezor pages</p>
+            </li>
+            <li data-aos="zoom-out">
+              <h5>Folad Press</h5>
+              <a href="http://perspolispitch.com">perspolispitch.com</a>
+              <p>
+                for backed, I used asp.net core Rest Api and for frontend i used
+                html and vanilla js
+              </p>
             </li>
           </ul>
         </div>

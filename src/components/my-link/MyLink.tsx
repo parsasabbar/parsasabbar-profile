@@ -14,7 +14,7 @@ function MyLink(props: { to: string; children?: any }) {
   const pagemove = useSelector<IAllReducersType, PageMovingStateType>(
     (state) => state.PageMovingReducer
   );
-  const test = () => {
+  const onClick = () => {
     dispatch<IActionModel<PageMovingStateType>>({
       type: ActionTypes.PAGE_MOVING,
       data: !pagemove,
@@ -23,7 +23,7 @@ function MyLink(props: { to: string; children?: any }) {
       history.push(props.to);
     }, 300);
   };
-  return <span onClick={test}>{props.children}</span>;
+  return <span onClick={onClick}>{props.children}</span>;
 }
 
 export default MyLink;
