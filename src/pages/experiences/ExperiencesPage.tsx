@@ -40,7 +40,14 @@ function ExperiencesPage() {
                 parsboksel.ir
               </a>
               <p>
-                this is my first website project created using asp.net webforms
+                this is my website,
+                <br />
+                technologies:
+                <ul>
+                  <li>Asp.net web forms</li>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                </ul>
               </p>
             </li>
             <li data-aos="zoom-out">
@@ -48,14 +55,34 @@ function ExperiencesPage() {
               <a href="http://perspolispitch.com" target="_blank">
                 perspolispitch.com
               </a>
-              <p>this project is created using asp.net webform too</p>
+              <p>
+                this project is created using asp.net webform too
+                <br />
+                technologies:
+                <ul>
+                  <li>Asp.net web forms</li>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                </ul>
+              </p>
             </li>
             <li data-aos="zoom-out">
               <h5>Samo Persian</h5>
               <a href="http://www.hozoorchain-iranchain.com/" target="_blank">
                 hozorchain-iranchain.com
               </a>
-              <p>this project is created using asp.net core and rezor pages</p>
+              <p>
+                this project is created using asp.net core and rezor pages
+                <br />
+                technologies:
+                <ul>
+                  <li>Asp.net core</li>
+                  <li>Razor Pages</li>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>Vanilla Javascript</li>
+                </ul>
+              </p>
             </li>
             <li data-aos="zoom-out">
               <h5>Folad Press</h5>
@@ -65,6 +92,14 @@ function ExperiencesPage() {
               <p>
                 for backed, I used asp.net core Rest Api and for frontend i used
                 html and vanilla js
+                <br />
+                technologies:
+                <ul>
+                  <li>Asp.net core</li>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>Vanilla Javascript</li>
+                </ul>
               </p>
             </li>
             <li data-aos="zoom-out">
@@ -75,6 +110,12 @@ function ExperiencesPage() {
               <p>
                 for backed, I used asp.net core Rest Api and for frontend i used
                 html and vanilla js
+                <br />
+                technologies:
+                <ul>
+                  <li>React</li>
+                  <li>Asp.net MVC</li>
+                </ul>
               </p>
             </li>
             <li data-aos="zoom-out">
@@ -85,6 +126,12 @@ function ExperiencesPage() {
               <p>
                 for backed, I used asp.net core Rest Api and for frontend i used
                 html and vanilla js
+                <br />
+                technologies:
+                <ul>
+                  <li>React</li>
+                  <li>Asp.net MVC</li>
+                </ul>
               </p>
             </li>
             <li data-aos="zoom-out">

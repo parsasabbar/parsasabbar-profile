@@ -13,7 +13,7 @@ const RouteManager = lazy(() => import("./infrastructures/route/RouteManager"));
 function App() {
   AOS.init({
     delay: 350,
-    offset: 150,
+    offset: 130,
   });
 
   // const cacheImage = () => {
