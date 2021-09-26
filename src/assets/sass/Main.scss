@@ -24,7 +24,7 @@ body {
 }
 * {
   box-sizing: border-box;
-  font-family: Verdana, IRANSansWeb, Geneva, Tahoma, sans-serif;
+  font-family: "Verdana V2 V1", IRANSansWeb, Geneva, Tahoma, sans-serif;
 }
 
 @font-face {
@@ -40,4 +40,21 @@ body {
       format("truetype"),
     url("../fonts/A-Iranian-Sans/5c53f1a72f61b5b51e2ea79a22ebc38b.svg#IRANSansWeb(FaNum) Medium")
       format("svg");
+}
+@font-face {
+  font-family: "Verdana V2 V1";
+  src: url("../fonts/verdana/1ae9b9868bd3121e932225b140a839a5.eot"); /* IE9*/
+  src: url("../fonts/verdana/1ae9b9868bd3121e932225b140a839a5.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/verdana/1ae9b9868bd3121e932225b140a839a5.woff2")
+      format("woff2"),
+    /* chrome、firefox */
+      url("../fonts/verdana/1ae9b9868bd3121e932225b140a839a5.woff")
+      format("woff"),
+    /* chrome、firefox */
+      url("../fonts/verdana/1ae9b9868bd3121e932225b140a839a5.ttf")
+      format("truetype"),
+    /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+      url("../fonts/verdana/1ae9b9868bd3121e932225b140a839a5.svg#Verdana V2 V1")
+      format("svg"); /* iOS 4.1- */
 }
