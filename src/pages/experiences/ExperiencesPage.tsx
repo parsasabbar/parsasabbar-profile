@@ -150,7 +150,7 @@ function ExperiencesPage() {
               </a>
               <p>
                 In this website, I used rest api for backend webservice and
-                vanilla js for front end.
+                vanilla js for frontend.
                 <br />
                 Technologies:
                 <ul>
