@@ -179,6 +179,7 @@ function ExperiencesPage() {
                 <ul>
                   <li>React</li>
                   <li>Asp.net MVC</li>
+                  <li>TFS</li>
                   <li>MSSQL</li>
                 </ul>
               </p>
@@ -209,6 +210,7 @@ function ExperiencesPage() {
                   <li>Redux</li>
                   <li>PostgreSQL</li>
                   <li>Django</li>
+                  <li>Git</li>
                   <li>Docker</li>
                 </ul>
                 Features:
@@ -251,6 +253,7 @@ function ExperiencesPage() {
                   <li>MongoDB</li>
                   <li>Docker</li>
                   <li>Nginx</li>
+                  <li>Git</li>
                   <li>Gitlab CI/CD</li>
                 </ul>
                 Features:

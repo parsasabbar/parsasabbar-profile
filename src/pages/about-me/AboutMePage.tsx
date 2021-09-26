@@ -31,6 +31,10 @@ function AboutMePage() {
           <br />
           Hello, I am Parsa Sabbar And I've been developing professionally for{" "}
           {currentTime ? new Date(currentTime).getFullYear() - 2019 : 2} years.
+          <br /> I'm interested in programming, solving problems and challenges.{" "}
+          <br />A day in my life may consist of: prepping web art, fixing some
+          front-end bugs, adding an API endpoint, dockerizing an application,
+          database design, setting up a build or deployment plan.
         </p>
         <h3>Education</h3>
         <ul>
