@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Button from "../../components/button/Button";
 import MyLink from "../../components/my-link/MyLink";
 import Percentage from "../../components/progress-bar/ProgressBar";
@@ -6,17 +6,15 @@ import Routes from "../../models/Routes";
 import styles from "./AboutMePage.module.scss";
 import backIcon from "../../assets/images/icons/arrow.svg";
 import titleImage from "../../assets/images/backgrounds/undraw_Profile_re_4a55.svg";
+import axios from "axios";
 
 function AboutMePage() {
-  const ref = useRef<HTMLDivElement>(null);
+  const [currentTime, setCurrentTime] = useState<string | null>(null);
 
   useEffect(() => {
-    // window.addEventListener("scroll", () => {
-    //   console.log("hi");
-    // });
-    // setInterval(() => {
-    //   console.log(ref.current?.getBoundingClientRect());
-    // }, 1000);
+    axios
+      .get("http://worldtimeapi.org/api/timezone/Europe/Amsterdam")
+      .then((res) => setCurrentTime(res.data.utc_datetime));
   }, []);
   return (
     <div className={styles.about_me_page}>
@@ -25,15 +23,24 @@ function AboutMePage() {
           <img src={titleImage} draggable={false} />
         </div>
         <h2>About Me</h2>
+        <h3>Profile</h3>
         <p>
-          hello i am parsa sabbar hello i am parsa sabbar hello i am parsa
-          sabbar hello i am parsa sabbar hello i am parsa sabbar
+          Nationality: Iranian
+          <br />
+          Date of birth: 1999-08-25
+          <br />
+          Hello, I am Parsa Sabbar And I've been developing professionally for{" "}
+          {currentTime ? new Date(currentTime).getFullYear() - 2019 : 2} years.
         </p>
-        <h2>skills</h2>
+        <h3>Education</h3>
+        <ul>
+          <li>2017 - 2021, Computer Engineering, Kharazmi University, Iran</li>
+        </ul>
+        <h3>Skills</h3>
         <div className={styles.skills_container}>
           <div className={styles.skill}>
             <span>C#</span>
-            <Percentage percentage={0.8} />
+            <Percentage percentage={0.75} />
           </div>
           <div className={styles.skill}>
             <span>Asp.net core</span>

@@ -30,26 +30,29 @@
     .details_container {
       @include Mixins.flex-center;
       flex-flow: column;
-      margin: 5rem 0;
       width: 100%;
+      a {
+        text-decoration: none;
+        color: #e04380;
+        &:visited {
+          color: #e04380;
+        }
+      }
       h3 {
         text-align: center;
+        margin-top: 3rem;
       }
       h5 {
         font-size: 1rem;
         margin: 0;
       }
+      .stepper_container {
+        margin: 5rem 0;
+      }
       .demos_container {
         width: 100%;
         > li {
           margin: 3rem 0;
-          a {
-            text-decoration: none;
-            color: #e04380;
-            &:visited {
-              color: #e04380;
-            }
-          }
         }
       }
     }
@@ -62,9 +65,10 @@
       width: 90vw;
       padding: 2rem;
       margin: 1rem;
-      .skills_container {
-        .skill {
-          margin: 3rem 0;
+      .details_container {
+        .stepper_container {
+          margin-top: 8rem;
+          margin-bottom: 4rem;
         }
       }
     }

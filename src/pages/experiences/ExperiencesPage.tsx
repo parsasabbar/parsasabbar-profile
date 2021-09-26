@@ -7,8 +7,39 @@ import Routes from "../../models/Routes";
 import Stepper from "../../components/stepper/Stepper";
 import sajImg from "../../assets/images/icons/experiences/Saj.png";
 import matnaImg from "../../assets/images/icons/experiences/matna.png";
+import { Link } from "react-router-dom";
+import { useRef } from "react";
 
 function ExperiencesPage() {
+  const sajBoxRef = useRef<HTMLDivElement>(null);
+  const pmmBoxRef = useRef<HTMLDivElement>(null);
+
+  //event handlers
+  const onClickLinkCompany = (
+    e: React.MouseEvent<HTMLAnchorElement, MouseEvent>,
+    company: "saj" | "pmm"
+  ) => {
+    e.preventDefault();
+    switch (company) {
+      case "pmm": {
+        pmmBoxRef.current?.scrollIntoView({
+          behavior: "smooth",
+          block: "center",
+        });
+        return;
+      }
+      case "saj": {
+        sajBoxRef.current?.scrollIntoView({
+          behavior: "smooth",
+          block: "center",
+        });
+        return;
+      }
+      default:
+        return;
+    }
+  };
+
   return (
     <div className={styles.experiences_page}>
       <div className={styles.box_container}>
@@ -18,20 +49,46 @@ function ExperiencesPage() {
         <h2>Work Experiences</h2>
         <div className={styles.details_container}>
           <h3>Companies</h3>
-          <Stepper
-            items={[
-              {
-                image: sajImg,
-                title: "Sepand Asa Jonob",
-                explain: "Sepand Asa Jonob",
-              },
-              {
-                image: matnaImg,
-                title: "Pars System Energy",
-                explain: "Pars System Energy",
-              },
-            ]}
-          />
+          <div className={styles.stepper_container}>
+            <Stepper
+              items={[
+                {
+                  image: sajImg,
+                  title: "Sepand Asa Jonob",
+                  ref: sajBoxRef,
+                  explain: (
+                    <>
+                      1 year as Full Stack developer
+                      <br />
+                      Install, configure and maintaining web services
+                      <br />
+                      Managing project infrastructure operations and services.
+                      <br />
+                      <a href="http://sepand-asa.ir" target="_blank">
+                        sepand-asa.ir
+                      </a>
+                    </>
+                  ),
+                },
+                {
+                  image: matnaImg,
+                  title: "Pishro Net Energy",
+                  ref: pmmBoxRef,
+                  explain: (
+                    <>
+                      1 year as Frontend developer
+                      <br />
+                      configure and developing whole react project
+                      <br />
+                      <a href="https://pnete.com" target="_blank">
+                        pnete.com
+                      </a>
+                    </>
+                  ),
+                },
+              ]}
+            />
+          </div>
           <h3>Demos</h3>
           <ul className={styles.demos_container}>
             <li data-aos="zoom-out">
@@ -40,11 +97,12 @@ function ExperiencesPage() {
                 parsboksel.ir
               </a>
               <p>
-                this is my website,
+                This is my first website.
                 <br />
-                technologies:
+                Technologies:
                 <ul>
                   <li>Asp.net web forms</li>
+                  <li>MSSQL</li>
                   <li>HTML</li>
                   <li>CSS</li>
                 </ul>
@@ -56,11 +114,10 @@ function ExperiencesPage() {
                 perspolispitch.com
               </a>
               <p>
-                this project is created using asp.net webform too
-                <br />
-                technologies:
+                Technologies:
                 <ul>
                   <li>Asp.net web forms</li>
+                  <li>MSSQL</li>
                   <li>HTML</li>
                   <li>CSS</li>
                 </ul>
@@ -69,14 +126,16 @@ function ExperiencesPage() {
             <li data-aos="zoom-out">
               <h5>Samo Persian</h5>
               <a href="http://www.hozoorchain-iranchain.com/" target="_blank">
-                hozorchain-iranchain.com
+                hozoorchain-iranchain.com
               </a>
               <p>
-                this project is created using asp.net core and rezor pages
+                In this website, I used Asp.net core mvc architecture.
                 <br />
-                technologies:
+                Technologies:
                 <ul>
                   <li>Asp.net core</li>
+                  <li>MSSQL</li>
+                  <li>Entity Framework</li>
                   <li>Razor Pages</li>
                   <li>HTML</li>
                   <li>CSS</li>
@@ -90,12 +149,14 @@ function ExperiencesPage() {
                 foladpress.ir
               </a>
               <p>
-                for backed, I used asp.net core Rest Api and for frontend i used
-                html and vanilla js
+                In this website, I used rest api for backend webservice and
+                vanilla js for front end.
                 <br />
-                technologies:
+                Technologies:
                 <ul>
                   <li>Asp.net core</li>
+                  <li>MSSQL</li>
+                  <li>Entity Framework</li>
                   <li>HTML</li>
                   <li>CSS</li>
                   <li>Vanilla Javascript</li>
@@ -108,29 +169,63 @@ function ExperiencesPage() {
                 saj-tdms.ir (private)
               </a>
               <p>
-                for backed, I used asp.net core Rest Api and for frontend i used
-                html and vanilla js
+                This is the project I worked on at{" "}
+                <Link to="" onClick={(e) => onClickLinkCompany(e, "saj")}>
+                  Sepand Asa Jonob
+                </Link>{" "}
+                company.
                 <br />
-                technologies:
+                Technologies:
                 <ul>
                   <li>React</li>
                   <li>Asp.net MVC</li>
+                  <li>MSSQL</li>
                 </ul>
               </p>
             </li>
             <li data-aos="zoom-out">
-              <h5>Pnete</h5>
+              <h5>Matna</h5>
               <a href="https://matna.pnete.com" target="_blank">
                 matna.pnete.com
               </a>
               <p>
-                for backed, I used asp.net core Rest Api and for frontend i used
-                html and vanilla js
+                Matna is the main project of{" "}
+                <Link to="" onClick={(e) => onClickLinkCompany(e, "pmm")}>
+                  Pishro Net Energy
+                </Link>{" "}
+                company; <br /> I worked there as frontend developer and
+                maintaining the project.
                 <br />
-                technologies:
+                Matna is used by lots of big companies such as Iranmall, Medical
+                Equipment Department, Pasargad insurance, Razi serum production
+                and ...
+                {/* <br />
+                In backend have a ton of python code but I have not had the
+                opportunity to work on python projects. */}
+                <br />
+                Technologies:
                 <ul>
                   <li>React</li>
-                  <li>Asp.net MVC</li>
+                  <li>Redux</li>
+                  <li>PostgreSQL</li>
+                  <li>Django</li>
+                  <li>Docker</li>
+                </ul>
+                Features:
+                <ul>
+                  <li>Use PWA</li>
+                  <li>
+                    Submit reports offline and send data to server when device
+                    become online
+                  </li>
+                  <li>
+                    Save all report fields for offline usage (via indexedDB)
+                  </li>
+                  <li>Barcode scanner</li>
+                  <li>Draggable items</li>
+                  <li>Real time data from sensors</li>
+                  <li>Real time graphs</li>
+                  <li>Attendance via camera and check location</li>
                 </ul>
               </p>
             </li>
@@ -140,8 +235,34 @@ function ExperiencesPage() {
                 setareyab.ir
               </a>
               <p>
-                for backed, I used asp.net core Rest Api and for frontend i used
-                html and vanilla js
+                In this project I worked as technical manager and backend
+                developer. <br />
+                Supervise team of 3 programmer and 1 designer.
+                <br />
+                Automated build, delivery and release project.
+                <br />
+                Mange tasks via trello.
+                <br /> Technologies:
+                <ul>
+                  <li>React</li>
+                  <li>Redux</li>
+                  <li>Express</li>
+                  <li>Socket.IO</li>
+                  <li>MongoDB</li>
+                  <li>Docker</li>
+                  <li>Nginx</li>
+                  <li>Gitlab CI/CD</li>
+                </ul>
+                Features:
+                <ul>
+                  <li>Upload huge files</li>
+                  <li>Streaming video</li>
+                  <li>Real time chat (via websocket)</li>
+                  <li>Real time notification (via websocket)</li>
+                  <li>SMS notification</li>
+                  <li>Bank portal</li>
+                  <li>Load balancer</li>
+                </ul>
               </p>
             </li>
           </ul>
