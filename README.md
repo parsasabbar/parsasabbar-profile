@@ -2,8 +2,8 @@
 
 ## Available Scripts
 
-This is my profile source code.\
-if you want to use it, you can clone the project and run below scripts:
+This is my profile project source code.\
+If you want to use it, you can clone the project and run below scripts:
 
 ### `npm install`
 
