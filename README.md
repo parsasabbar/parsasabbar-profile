@@ -26,4 +26,4 @@ It correctly bundles React in production mode and optimizes the build for the be
 ## Deploy app
 
 first commit changes and push to github repository,
-then run `npm deploy` to deploy the application to github.
+then run `npm run deploy` to deploy the application to github.
