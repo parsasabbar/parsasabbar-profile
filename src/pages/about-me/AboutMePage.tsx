@@ -84,7 +84,15 @@ function AboutMePage() {
           </div>
           <div className={styles.skill}>
             <span>SQL</span>
-            <Percentage percentage={0.5} />
+            <Percentage percentage={0.55} />
+          </div>
+          <div className={styles.skill}>
+            <span>Python</span>
+            <Percentage percentage={0.85} />
+          </div>
+          <div className={styles.skill}>
+            <span>Flask</span>
+            <Percentage percentage={0.6} />
           </div>
           <div className={styles.skill}>
             <span>Redis</span>

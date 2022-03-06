@@ -7,6 +7,7 @@ import Routes from "../../models/Routes";
 import Stepper from "../../components/stepper/Stepper";
 import sajImg from "../../assets/images/icons/experiences/Saj.png";
 import matnaImg from "../../assets/images/icons/experiences/matna.png";
+import parsTasmimImg from "../../assets/images/icons/experiences/pars-tasmim.jpg";
 import { Link } from "react-router-dom";
 import { useRef } from "react";
 
@@ -78,10 +79,26 @@ function ExperiencesPage() {
                     <>
                       1 year as Frontend developer
                       <br />
-                      configure and developing whole react project
+                      Configure and developing whole react project
                       <br />
                       <a href="https://pnete.com" target="_blank">
                         pnete.com
+                      </a>
+                    </>
+                  ),
+                },
+                {
+                  image: parsTasmimImg,
+                  title: "Pars Tasmim",
+                  explain: (
+                    <>
+                      Currently as Full Stack developer
+                      <br />
+                      Developing MTN Irancell projects such as
+                      sourcing.irancell.ir, sales.irancell.ir and ...
+                      <br />
+                      <a href="https://www.parstasmim.com/" target="_blank">
+                        parstasmim.com
                       </a>
                     </>
                   ),
@@ -266,6 +283,17 @@ function ExperiencesPage() {
                   <li>Bank portal</li>
                   <li>Load balancer</li>
                 </ul>
+              </p>
+            </li>
+            <li data-aos="zoom-out">
+              <h5>MTN Irancell ESourcing</h5>
+              <a href="https://sourcing.irancell.ir" target="_blank">
+                sourcing.irancell.ir
+              </a>
+              <p>
+                Developing and maintaining this project
+                <br />
+                Features and technologies are private.
               </p>
             </li>
           </ul>

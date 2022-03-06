@@ -3,6 +3,7 @@ import gmailIcon from "../../assets/images/icons/contact/gmail.svg";
 import linkedinIcon from "../../assets/images/icons/contact/linkedin.svg";
 import telegramIcon from "../../assets/images/icons/contact/telegram.svg";
 import instagramIcon from "../../assets/images/icons/contact/instagram.svg";
+import mtnIrancellIcon from "../../assets/images/icons/contact/mtn-irancell.svg";
 import callIcon from "../../assets/images/icons/contact/call.svg";
 import linkIcon from "../../assets/images/icons/contact/exit-top-right.svg";
 import Button from "../../components/button/Button";
@@ -12,6 +13,7 @@ import Routes from "../../models/Routes";
 import titleImage from "../../assets/images/backgrounds/undraw_contact_us_15o2.svg";
 
 import { useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 function ContactPage() {
   return (
     <div className={styles.contact_page}>
@@ -81,6 +83,17 @@ function ContactPage() {
                 <img src={linkIcon} />
               </div>
             </a>
+          </div>
+          <div className={styles.social} data-aos="zoom-out">
+            <Link to={Routes.CONTACT}>
+              <div>
+                <img src={mtnIrancellIcon} />
+              </div>
+              <div className={styles.info}>parsa.s@mtnirancell.ir</div>
+              {/* <div className={styles.linkIcon}>
+                <img src={linkIcon} />
+              </div> */}
+            </Link>
           </div>
         </div>
         <MyLink to={Routes.DEFAULT}>
